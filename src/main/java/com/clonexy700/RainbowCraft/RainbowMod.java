@@ -1,7 +1,10 @@
-package com.example.examplemod;
+package com.clonexy700.RainbowCraft;
 
+import com.clonexy700.RainbowCraft.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -22,10 +25,14 @@ import java.util.stream.Collectors;
 public class RainbowMod
 {
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "rbow";
+
 
     public RainbowMod() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        RegistryHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -33,4 +40,11 @@ public class RainbowMod
     private void setup(final FMLCommonSetupEvent event) { }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
+
+    public static final ItemGroup TAB = new ItemGroup("RainbowTab") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.RUBY.get());
+        }
+    };
 }
