@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "rbow:block/ruby_block" }
+  }
+}

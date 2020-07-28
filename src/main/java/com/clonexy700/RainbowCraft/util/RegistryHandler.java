@@ -1,6 +1,9 @@
 package com.clonexy700.RainbowCraft.util;
 
 import com.clonexy700.RainbowCraft.RainbowMod;
+import com.clonexy700.RainbowCraft.blocks.BlockItemBase;
+import com.clonexy700.RainbowCraft.blocks.RainbowBlock;
+import com.clonexy700.RainbowCraft.blocks.RubyBlock;
 import com.clonexy700.RainbowCraft.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -27,6 +30,12 @@ public class RegistryHandler {
     // блок
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
 
+    public static final RegistryObject<Block> RAINBOW_BLOCK = BLOCKS.register("rainbow_block", RainbowBlock::new);
+
     // предмет блок
+
+    public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+
+    public static final RegistryObject<Item> RAINBOW_BLOCK_ITEM = ITEMS.register("rainbow_block", () -> new BlockItemBase(RAINBOW_BLOCK.get()));
 
 }
