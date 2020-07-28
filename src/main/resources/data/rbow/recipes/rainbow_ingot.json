@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rbow:rainbow_block"
+    }
+  ],
+  "result":
+  {
+    "item": "rbow:rainbow_ingot",
+    "count": 9
+  }
+}

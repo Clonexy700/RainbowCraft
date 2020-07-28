@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "rbow:rainbow_ore"
+  },
+  "result": "rbow:rainbow_ingot",
+  "experience": 1.0,
+  "cookingtime": 180
+}
