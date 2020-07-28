@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    RAINBOW_FORGED(4, 2555, 12, 6.0F, 30, () -> {
+    RAINBOW_FORGED(4, 2555, 12, 10.0F, 30, () -> {
         return Ingredient.fromItems(RegistryHandler.RAINBOW_SWORD.get());
     });
 

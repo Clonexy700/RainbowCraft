@@ -9,5 +9,7 @@
   "block.rbow.rainbow_gem_ore": "Rainbow gem ore",
   "block.rbow.rainbow_gem_block": "Rainbow gem block",
   "item.rbow.rainbow_forged_ingot": "True rainbow ingot",
-  "item.rbow.rainbow_sword": "True rainbow sword"
+  "item.rbow.rainbow_sword": "True rainbow sword",
+  "item.rbow.rainbow_pickaxe": "True rainbow pickaxe",
+  "item.rbow.rainbow_axe": "True rainbow axe"
 }

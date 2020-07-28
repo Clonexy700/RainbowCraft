@@ -10,16 +10,16 @@
   {
     "x":
     {
-      "item": "rbow:rainbow_ingot"
+      "item": "rbow:rainbow_block"
     },
     "y":
     {
-      "item": "rbow:rainbow_gem"
+      "item": "rbow:rainbow_gem_block"
     }
   },
   "result":
   {
     "item": "rbow:rainbow_forged_ingot",
-    "count": 4
+    "count": 10
   }
 }

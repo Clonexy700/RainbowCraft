@@ -5,7 +5,9 @@ import com.clonexy700.RainbowCraft.blocks.*;
 import com.clonexy700.RainbowCraft.items.ItemBase;
 import com.clonexy700.RainbowCraft.tools.ModItemTier;
 import net.minecraft.block.Block;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -32,7 +34,15 @@ public class RegistryHandler {
     // инструменты
 
     public static final RegistryObject<SwordItem> RAINBOW_SWORD = ITEMS.register("rainbow_sword", () ->
-            new SwordItem(ModItemTier.RAINBOW_FORGED, 5, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
+            new SwordItem(ModItemTier.RAINBOW_FORGED, 6, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
+
+    public static final RegistryObject<PickaxeItem> RAINBOW_PICKAXE = ITEMS.register("rainbow_pickaxe", () ->
+            new PickaxeItem(ModItemTier.RAINBOW_FORGED, 3, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
+
+    public static final RegistryObject<AxeItem> RAINBOW_AXE = ITEMS.register("rainbow_axe", () ->
+            new AxeItem(ModItemTier.RAINBOW_FORGED, 4, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
+
+
 
     // блок
 
