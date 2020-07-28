@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    "xyx",
+    " x "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "rbow:rainbow_ingot"
+    },
+    "y":
+    {
+      "item": "rbow:rainbow_gem"
+    }
+  },
+  "result":
+  {
+    "item": "rbow:rainbow_forged_ingot",
+    "count": 4
+  }
+}

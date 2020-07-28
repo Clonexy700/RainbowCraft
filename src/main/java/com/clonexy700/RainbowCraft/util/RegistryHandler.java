@@ -25,6 +25,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_INGOT = ITEMS.register("rainbow_ingot", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_GEM = ITEMS.register("rainbow_gem", ItemBase::new);
+    public static final RegistryObject<Item> RAINBOW_FORGED_INGOT = ITEMS.register("rainbow_forged_ingot", ItemBase::new);
 
     // блок
 

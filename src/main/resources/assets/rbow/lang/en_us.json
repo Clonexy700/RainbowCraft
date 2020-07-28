@@ -7,5 +7,6 @@
   "block.rbow.rainbow_block": "Rainbow block",
   "block.rbow.rainbow_ore": "Rainbow ore",
   "block.rbow.rainbow_gem_ore": "Rainbow gem ore",
-  "block.rbow.rainbow_gem_block": "Rainbow gem block"
+  "block.rbow.rainbow_gem_block": "Rainbow gem block",
+  "item.rbow.rainbow_forged_ingot": "True rainbow ingot"
 }
