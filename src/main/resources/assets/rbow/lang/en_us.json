@@ -3,5 +3,7 @@
   "item.rbow.rainbow_ingot": "Rainbow Ingot",
   "itemGroup.RainbowTab": "Rainbow Craft",
   "block.rbow.ruby_block": "Ruby block",
-  "block.rbow.rainbow_block": "Rainbow block"
+  "block.rbow.rainbow_block": "Rainbow block",
+  "block.rbow.rainbow_ore": "Rainbow ore",
+  "block.rbow.rainbow_gem_ore": "Rainbow gem ore"
 }
