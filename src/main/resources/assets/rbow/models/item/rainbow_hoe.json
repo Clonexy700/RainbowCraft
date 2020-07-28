@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "rbow:items/rainbow_hoe"
+  }
+}
