@@ -44,7 +44,7 @@ public class RainbowMod
     public static final ItemGroup TAB = new ItemGroup("RainbowTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.RUBY.get());
+            return new ItemStack(RegistryHandler.RAINBOW_INGOT.get());
         }
     };
 }
