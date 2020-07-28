@@ -2,5 +2,6 @@
   "item.rbow.ruby": "Ruby",
   "item.rbow.rainbow_ingot": "Rainbow Ingot",
   "itemGroup.RainbowTab": "Rainbow Craft",
-  "block.rbow.ruby_block": "Ruby block"
+  "block.rbow.ruby_block": "Ruby block",
+  "block.rbow.rainbow_block": "Rainbow block"
 }

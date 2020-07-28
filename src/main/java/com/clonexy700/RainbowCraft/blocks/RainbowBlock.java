@@ -12,7 +12,7 @@ public class RainbowBlock extends Block {
                 .hardnessAndResistance(3.0f, 6.0f)
                 .sound(SoundType.METAL)
                 .harvestLevel(2)
-                .lightValue(5)
+                .lightValue(13)
                 .harvestTool(ToolType.PICKAXE));
     }
 }
