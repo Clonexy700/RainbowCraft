@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "rbow:rainbow_gem_ore"
+  },
+  "result": "rbow:rainbow_gem",
+  "experience": 5.0,
+  "cookingtime": 60
+}
