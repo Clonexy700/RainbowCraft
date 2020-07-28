@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "rbow:block/rainbow_gem_block" }
+  }
+}

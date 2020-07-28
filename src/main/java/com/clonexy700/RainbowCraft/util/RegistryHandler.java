@@ -36,6 +36,8 @@ public class RegistryHandler {
 
     public static final RegistryObject<Block> RAINBOW_GEM_ORE = BLOCKS.register("rainbow_gem_ore", RainbowGemOre::new);
 
+    public static final RegistryObject<Block> RAINBOW_GEM_BLOCK = BLOCKS.register("rainbow_gem_block", RainbowGemBlock::new);
+
     // предмет блок
 
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
@@ -45,6 +47,8 @@ public class RegistryHandler {
     public static final RegistryObject<Item> RAINBOW_ORE_ITEM = ITEMS.register("rainbow_ore", () -> new BlockItemBase(RAINBOW_ORE.get()));
 
     public static final RegistryObject<Item> RAINBOW_GEM_ORE_ITEM = ITEMS.register("rainbow_gem_ore", () -> new BlockItemBase(RAINBOW_GEM_ORE.get()));
+
+    public static final RegistryObject<Item> RAINBOW_GEM_BLOCK_ITEM = ITEMS.register("rainbow_gem_block", () -> new BlockItemBase(RAINBOW_GEM_BLOCK.get()));
 
 
 }
