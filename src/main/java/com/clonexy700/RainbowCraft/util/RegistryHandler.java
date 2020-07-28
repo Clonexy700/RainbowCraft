@@ -3,8 +3,10 @@ package com.clonexy700.RainbowCraft.util;
 import com.clonexy700.RainbowCraft.RainbowMod;
 import com.clonexy700.RainbowCraft.blocks.*;
 import com.clonexy700.RainbowCraft.items.ItemBase;
+import com.clonexy700.RainbowCraft.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,6 +28,11 @@ public class RegistryHandler {
     public static final RegistryObject<Item> RAINBOW_INGOT = ITEMS.register("rainbow_ingot", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_GEM = ITEMS.register("rainbow_gem", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_FORGED_INGOT = ITEMS.register("rainbow_forged_ingot", ItemBase::new);
+
+    // инструменты
+
+    public static final RegistryObject<SwordItem> RAINBOW_SWORD = ITEMS.register("rainbow_sword", () ->
+            new SwordItem(ModItemTier.RAINBOW_FORGED, 5, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
 
     // блок
 
