@@ -1,10 +1,13 @@
 package com.clonexy700.RainbowCraft.util;
 
 import com.clonexy700.RainbowCraft.RainbowMod;
+import com.clonexy700.RainbowCraft.armor.ModArmorMaterial;
 import com.clonexy700.RainbowCraft.blocks.*;
 import com.clonexy700.RainbowCraft.items.ItemBase;
 import com.clonexy700.RainbowCraft.tools.ModItemTier;
 import net.minecraft.block.Block;
+import net.minecraft.client.tutorial.Tutorial;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -44,6 +47,23 @@ public class RegistryHandler {
 
     public static final RegistryObject<HoeItem> RAINBOW_HOE = ITEMS.register("rainbow_hoe", () ->
             new HoeItem(ModItemTier.RAINBOW_FORGED, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
+
+
+    // броня
+
+    public static final RegistryObject<ArmorItem> RAINBOW_HELMET = ITEMS.register("rainbow_helmet", () ->
+            new ArmorItem(ModArmorMaterial.RAINBOW_FORGED, EquipmentSlotType.HEAD, new Item.Properties().group(RainbowMod.TAB)));
+
+    public static final RegistryObject<ArmorItem> RAINBOW_CHESTPLATE = ITEMS.register("rainbow_chestplate", () ->
+            new ArmorItem(ModArmorMaterial.RAINBOW_FORGED, EquipmentSlotType.CHEST, new Item.Properties().group(RainbowMod.TAB)));
+
+    public static final RegistryObject<ArmorItem> RAINBOW_LEGGINGS = ITEMS.register("rainbow_leggings", () ->
+            new ArmorItem(ModArmorMaterial.RAINBOW_FORGED, EquipmentSlotType.LEGS, new Item.Properties().group(RainbowMod.TAB)));
+
+    public static final RegistryObject<ArmorItem> RAINBOW_BOOTS = ITEMS.register("rainbow_boots", () ->
+            new ArmorItem(ModArmorMaterial.RAINBOW_FORGED, EquipmentSlotType.FEET, new Item.Properties().group(RainbowMod.TAB)));
+
+
 
 
 
