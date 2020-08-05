@@ -18,6 +18,7 @@ public class RainbowApple extends Item{
                 .effect(() -> new EffectInstance(Effects.ABSORPTION, 600, 2),1)
                 .effect(() -> new EffectInstance(Effects.HASTE, 600, 2),1)
                 .effect(() -> new EffectInstance(Effects.HEALTH_BOOST, 600, 2),1)
+                .setAlwaysEdible()
                 .build())
         );
     }
