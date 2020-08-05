@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "rbow:rainbow_forged_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "rbow:rainbow_leggings",
+    "count": 1
+  }
+}
