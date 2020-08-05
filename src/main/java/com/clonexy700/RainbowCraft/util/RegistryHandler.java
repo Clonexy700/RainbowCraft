@@ -4,6 +4,7 @@ import com.clonexy700.RainbowCraft.RainbowMod;
 import com.clonexy700.RainbowCraft.armor.ModArmorMaterial;
 import com.clonexy700.RainbowCraft.blocks.*;
 import com.clonexy700.RainbowCraft.items.ItemBase;
+import com.clonexy700.RainbowCraft.items.RainbowApple;
 import com.clonexy700.RainbowCraft.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.client.tutorial.Tutorial;
@@ -30,6 +31,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> RAINBOW_INGOT = ITEMS.register("rainbow_ingot", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_GEM = ITEMS.register("rainbow_gem", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_FORGED_INGOT = ITEMS.register("rainbow_forged_ingot", ItemBase::new);
+    public static final RegistryObject<RainbowApple> RAINBOW_APPLE = ITEMS.register("rainbow_apple", RainbowApple::new);
 
     // инструменты
 
