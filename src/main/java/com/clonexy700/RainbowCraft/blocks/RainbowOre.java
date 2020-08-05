@@ -12,6 +12,8 @@ public class RainbowOre extends Block {
                 .hardnessAndResistance(3.0f, 6.0f)
                 .sound(SoundType.METAL)
                 .harvestLevel(1)
-                .harvestTool(ToolType.PICKAXE));
+                .harvestTool(ToolType.PICKAXE)
+                .setRequiresTool()
+        );
     }
 }

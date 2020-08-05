@@ -12,6 +12,8 @@ public class RainbowGemOre extends Block {
                 .hardnessAndResistance(3.0f, 6.0f)
                 .sound(SoundType.METAL)
                 .harvestLevel(2)
-                .harvestTool(ToolType.PICKAXE));
+                .harvestTool(ToolType.PICKAXE)
+                .setRequiresTool()
+        );
     }
 }

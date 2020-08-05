@@ -16,7 +16,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
     // rainbow_forged_layer_1 rainbow_forged_layer_2
     RAINBOW_FORGED(RainbowMod.MOD_ID + ":rainbow_forged", 60, new int[] { 6, 15, 12, 6  }, 35,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0F, () -> { return Ingredient.fromItems(RegistryHandler.RAINBOW_FORGED_INGOT.get()); });
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0F, () -> { return Ingredient.fromItems(RegistryHandler.RAINBOW_FORGED_INGOT.get()); }, 3);
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
@@ -26,9 +26,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
+    private final float knockbackResistance;
 
     ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability,
-                     SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+                     SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial, float knockbackResistance) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmountArray;
@@ -36,6 +37,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         this.soundEvent = soundEvent;
         this.toughness = toughness;
         this.repairMaterial = repairMaterial;
+        this.knockbackResistance = knockbackResistance;
 
     }
 
@@ -73,5 +75,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float func_230304_f_() {
+        return this.knockbackResistance;
     }
 }

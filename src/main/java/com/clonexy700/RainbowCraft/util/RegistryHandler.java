@@ -17,8 +17,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, RainbowMod.MOD_ID);
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, RainbowMod.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RainbowMod.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RainbowMod.MOD_ID);
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -27,7 +27,7 @@ public class RegistryHandler {
 
     // предметы
 
-    public static final RegistryObject<RainbowApple> POISON_APPLE = ITEMS.register("poison_apple", RainbowApple::new);
+    public static final RegistryObject<RainbowApple> RAINBOW_APPLE = ITEMS.register("rainbow_apple", RainbowApple::new);
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
     public static final RegistryObject<Item> RAINBOW_INGOT = ITEMS.register("rainbow_ingot", ItemBase::new);
@@ -49,7 +49,7 @@ public class RegistryHandler {
             new ShovelItem(ModItemTier.RAINBOW_FORGED, 2, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
 
     public static final RegistryObject<HoeItem> RAINBOW_HOE = ITEMS.register("rainbow_hoe", () ->
-            new HoeItem(ModItemTier.RAINBOW_FORGED, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
+            new HoeItem(ModItemTier.RAINBOW_FORGED,1, 0.0F, new Item.Properties().group(RainbowMod.TAB)));
 
 
     // броня
